@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task0002_3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--
+     1.图片数量及URL均在HTML中写好
+	 2.可以配置:轮播的顺序（正序、逆序）、是否循环、间隔时长
+	 3.图片切换的动画要流畅
+	 4.在轮播图下方自动生成对应图片的小点，点击小点，轮播图自动动画切换到对应的图片
+	-->
+    <h2>轮播</h2>
+    <div id="slider-container">
+        <div id="slider-content">
+			<img src="img/img-1.jpg">
+			<img src="img/img-2.jpg">
+			<img src="img/img-3.jpg">
+			<img src="img/img-4.jpg">
+        </div> 
+        <ul id="slider-dot">
+        	<li class="active"></li>
+        	<li></li>
+        	<li></li>
+        	<li></li>
+        </ul>
+    </div>
+    <script src="js/util.js" ></script>
+    <script src="js/task0002_3.js" ></script>
+    <script>
+
+	slider.initialize( '#slider-container',{
+		is_positive_order:true,
+		is_circulation:true,
+		interval_time:2000
+	} );
+
+     </script>
+</body>
+</html>
